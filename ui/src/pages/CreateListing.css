@@ -1,0 +1,110 @@
+.create{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+
+
+}
+.create-inner{
+    width: 50%;
+    max-width: 650px;
+    min-width: 300px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.create .field{
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.create .field input {
+border: none;
+width: 100px;
+flex-grow: 1;
+font-size: 18px;
+}
+
+.create .field select{
+    border: none;
+}
+.create .field select:focus{
+        outline: none;
+}
+.create .field input:focus{
+    outline: none;
+}
+.create .ta{
+    height: 200px;
+    align-items: baseline;
+    flex-direction: column;
+
+}
+
+.ta textarea{
+    border: none;
+    flex: 1;
+    flex-direction: column;
+    outline: none;
+    resize: none;
+    width: 100%;
+
+}
+
+.create button{
+    border: none;
+    background: #4b94fb;
+    font-size: 20px;
+    color: white;
+    border-radius: 3px;
+    height: 50px;
+}
+
+#imageUpload{
+    height: 200px;
+    background: #efefef;
+    border: 2px dashed #ccc;
+    color: #999;
+
+
+}
+#imageUpload input{
+    display: none;
+}
+#imageUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#imageUpload svg{
+    transform: scale(1.5);
+}
+#imageUpload img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:768px){
+    .create .field{
+        height: 32px;
+    }
+    .ta{
+        height: 150px !important;
+    }
+}

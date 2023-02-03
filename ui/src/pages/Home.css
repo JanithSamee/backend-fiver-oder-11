@@ -1,0 +1,10 @@
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .branding{
+    font-size:30px;
+}

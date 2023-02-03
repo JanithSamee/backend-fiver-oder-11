@@ -1,0 +1,53 @@
+.view{
+    padding: 10px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    gap:20px ;
+    flex-direction: column;
+    width: fit-content;
+}
+.view tr{
+    display: flex;
+    width: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.view tr:first-child{
+    border:none ;
+}
+.view th{
+    width: 200px;
+    min-width: 200px;
+    display: inline-block;
+    color: #4b94fb;
+    
+}
+.view td{
+    min-width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.view td img{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    object-fit: cover;
+}
+.actions{
+    
+    display: flex;
+    gap: 5px;
+    min-width: 120px  !important;
+    width: 120px !important;
+}
+.actions svg:hover{
+    color: #4b94fb;
+    cursor: pointer;
+}
